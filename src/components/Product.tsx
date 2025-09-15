@@ -57,13 +57,18 @@ const Product = () => {
             </div>
 
             {/* Pricing */}
-            <div className="text-center bg-gradient-to-r from-green-500 to-blue-500 text-white p-8 rounded-xl">
+            <a 
+              href="https://pay.kiwify.com.br/SNxsdzs" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-center bg-gradient-to-r from-green-500 to-blue-500 text-white p-8 rounded-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
               <div className="mb-4">
                 <p className="text-lg line-through opacity-75">De R$ 97,00</p>
                 <p className="text-4xl md:text-5xl font-bold">APENAS R$ 29,90</p>
                 <p className="text-lg mt-2">Pagamento único • Sem mensalidade</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
