@@ -59,12 +59,17 @@ const Credibility = () => {
             <p className="text-lg mb-4">
               ...mas errando no básico: <span className="font-bold text-green-400">comida de verdade</span>.
             </p>
-            <div className="bg-green-600 p-4 rounded-lg">
+            <a 
+              href="https://kiwify.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-green-600 p-4 rounded-lg hover:bg-green-700 transition-colors duration-300 cursor-pointer transform hover:scale-105"
+            >
               <p className="text-xl font-bold">
                 Por R$29,90 você tem acesso ao que resolve.
               </p>
               <p className="text-lg opacity-90">O resto é ilusão vendida por farmácia.</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
