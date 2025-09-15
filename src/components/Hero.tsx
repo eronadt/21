@@ -10,12 +10,13 @@ const Hero = () => {
           <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
             <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
               <iframe 
-                src="https://player.vimeo.com/video/1118125409?badge=0&autopause=0&player_id=0&app_id=58479" 
+                src="https://www.youtube.com/embed/ppjEjsKhGuU?si=Zia-MScPT4DI_v1i&controls=0" 
                 frameBorder="0" 
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
-                title="video pv"
+                title="YouTube video player"
+                allowFullScreen
               />
             </div>
           </div>
