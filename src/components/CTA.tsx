@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Clock, Users, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Clock, Users } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -15,12 +15,6 @@ const CTA = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          {/* Main CTA Button */}
-          <button className="bg-green-500 text-white text-lg md:text-3xl font-bold py-6 px-8 md:py-8 md:px-12 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center space-x-2 md:space-x-4 mb-8 w-full max-w-md md:max-w-none md:w-auto">
-            <span>QUERO ACESSAR O MÉTODO – R$29,90</span>
-            <ArrowRight className="w-6 h-6 md:w-8 md:h-8 flex-shrink-0" />
-          </button>
-
           <p className="text-white text-lg mb-8 opacity-90">
             (Entrega imediata por e-mail)
           </p>
