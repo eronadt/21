@@ -19,7 +19,7 @@ const Product = () => {
         {/* Imagem do Produto */}
         <div className="text-center mb-8">
           <img 
-            src="https://i.imgur.com/uo1f0JS.jpeg"
+            src="https://i.imgur.com/MMrL54J.jpeg"
             alt="Flat lay com caderno, celular, checklist e alimentos saudáveis"
             loading="lazy"
             className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
