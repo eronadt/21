@@ -8,9 +8,9 @@ const CTA = () => {
         {/* CTA Image */}
         <div className="mb-8">
           <img 
-            src="https://i.imgur.com/5H6yvst.png=600" 
+            src="https://i.imgur.com/5H6yvst.png=400" 
             alt="Mãe feliz com celular recebendo conteúdo digital"
-            className="w-30 h-30 mx-auto rounded-full object-cover border-8 border-white shadow-2xl"
+            className="w-30 h-30 mx-auto rounded-full object-cover"
           />
         </div>
 
