@@ -9,9 +9,7 @@ const Hero = () => {
         <div className="mb-8">
           <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
             <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
-              <iframe 
-                src="https://www.youtube.com/embed/ppjEjsKhGuU?si=Zia-MScPT4DI_v1i&controls=0" 
-                frameBorder="0" 
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ppjEjsKhGuU?si=EVPCu92C5GrzWq-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
