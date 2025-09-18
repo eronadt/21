@@ -1,31 +1,56 @@
-import React from 'react';
-import { AlertTriangle, Baby, ArrowDown } from 'lucide-react';
+import React, { useState } from 'react';
+import { AlertTriangle, Baby, ArrowDown, Play } from 'lucide-react';
 
 const Hero = () => {
+  const [playVideo, setPlayVideo] = useState(false);
+
   return (
     <section className="bg-gradient-to-br from-pink-50 via-white to-blue-50 py-16">
       <div className="container mx-auto px-4 text-center">
 
-        {/* Hero Video */}
+        {/* Hero Video (com thumbnail e botão de play animado) */}
         <div className="mb-8">
-          <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
-            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-              <iframe
-                src="https://www.youtube.com/embed/ppjEjsKhGuU?si=EVPCu92C5GrzWq-j"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                }}
-              />
-            </div>
+          <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden relative">
+            {!playVideo ? (
+              <div className="relative cursor-pointer" onClick={() => setPlayVideo(true)}>
+                {/* Thumbnail do YouTube */}
+                <img
+                  src="https://img.youtube.com/vi/ppjEjsKhGuU/maxresdefault.jpg"
+                  alt="Video Thumbnail"
+                  className="w-full h-auto"
+                />
+                {/* Overlay escuro */}
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                  {/* Animação do Play */}
+                  <div className="relative flex items-center justify-center">
+                    {/* Círculo pulsante */}
+                    <span className="absolute inline-flex h-20 w-20 rounded-full bg-red-500 opacity-75 animate-ping"></span>
+                    {/* Botão Play */}
+                    <button className="relative bg-white rounded-full p-5 shadow-lg hover:scale-110 transition">
+                      <Play className="w-10 h-10 text-red-600" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/ppjEjsKhGuU?si=EVPCu92C5GrzWq-j&autoplay=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />
+              </div>
+            )}
           </div>
         </div>
 
