@@ -71,7 +71,7 @@ const Problems = () => {
         <div className="bg-red-600 text-white p-8 rounded-2xl max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <img 
-              src="https://images.pexels.com/photos/7089020/pexels-photo-7089020.jpeg?auto=compress&cs=tinysrgb&w=600" 
+              src="https://i.imgur.com/zg5ZIIT.png=600" 
               alt="Ultrassom com mãe preocupada"
               className="w-full max-w-sm mx-auto rounded-xl opacity-90"
             />
