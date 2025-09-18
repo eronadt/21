@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Desenvolvido com amor e ciência para garantir que seu bebê tenha o melhor começo de vida possível.
+            Você não está só gestando um bebê. Está construindo um legado.
           </p>
 
           <div className="border-t border-gray-700 pt-8">
