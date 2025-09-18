@@ -5,15 +5,25 @@ const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-pink-50 via-white to-blue-50 py-16">
       <div className="container mx-auto px-4 text-center">
-        {/* Hero Image */}
+
+        {/* Hero Video */}
         <div className="mb-8">
           <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
-            <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>           
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} 
+            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe
+                src="https://www.youtube.com/embed/ppjEjsKhGuU?si=EVPCu92C5GrzWq-j"
                 title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                }}
               />
             </div>
           </div>
@@ -27,12 +37,12 @@ const Hero = () => {
 
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Seu bebê pode estar se desenvolvendo com 
+          Seu bebê pode estar se desenvolvendo com
           <span className="text-red-600 block mt-2">deficiência nutricional invisível</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-700 mb-4 font-medium">
-           e a culpa pode não ser sua. Mas a consequência será.
+          e a culpa pode não ser sua. Mas a consequência será.
         </p>
 
         {/* Subheadline */}
@@ -44,7 +54,7 @@ const Hero = () => {
             </h2>
           </div>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Como nutrir seus bebês com o que realmente importa  mesmo sem conseguir 
+            Como nutrir seus bebês com o que realmente importa mesmo sem conseguir
             comprar salmão, chia ou castanhas caras.
           </p>
         </div>
