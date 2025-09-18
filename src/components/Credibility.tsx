@@ -1,6 +1,34 @@
 import React from 'react';
 import { Award, Users, BookOpen, Star } from 'lucide-react';
 
+const faqs: { question: string; answer: string }[] = [
+  {
+    question: 'Como recebo o Método dos 21 Nutrientes após a compra?',
+    answer:
+      'O acesso chega imediatamente no seu e-mail assim que o pagamento é confirmado, permitindo que você entre na plataforma e consulte todo o conteúdo na mesma hora.',
+  },
+  {
+    question: 'Por quanto tempo terei acesso ao conteúdo?',
+    answer:
+      'O acesso é vitalício. Você realiza um único pagamento e pode revisar as orientações sempre que precisar durante a gestação e até no pós-parto.',
+  },
+  {
+    question: 'Serve para todas as fases da gestação?',
+    answer:
+      'Sim. O método está organizado por trimestre gestacional, com listas de mercado, cardápios e orientações específicas para cada fase.',
+  },
+  {
+    question: 'Vou precisar comprar alimentos caros ou suplementos importados?',
+    answer:
+      'Não. Todo o plano é focado em comida de verdade acessível, com substituições econômicas e ingredientes que você encontra facilmente no mercado.',
+  },
+  {
+    question: 'E se eu tiver restrições alimentares ou enjoos?',
+    answer:
+      'Você recebe opções de substituição e cardápios adaptáveis para as restrições mais comuns, além de sugestões para lidar com enjoos e aversões típicas da gestação.',
+  },
+];
+
 const Credibility = () => {
   return (
     <section className="bg-white py-16">
@@ -48,9 +76,25 @@ const Credibility = () => {
             </div>
           </div>
 
+          {/* Perguntas Frequentes */}
+          <div className="bg-white p-8 rounded-2xl border border-blue-100 shadow-sm mb-12 text-left">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Perguntas Frequentes</h3>
+            <dl className="space-y-6">
+              {faqs.map((faq) => (
+                <div
+                  key={faq.question}
+                  className="bg-blue-50 p-6 rounded-xl border border-blue-100"
+                >
+                  <dt className="text-lg font-semibold text-gray-800">{faq.question}</dt>
+                  <dd className="text-gray-600 mt-2 leading-relaxed">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
           {/* Final Warning */}
           <div className="bg-gray-800 text-white p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-yellow-400">     
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">
             </h3>
             <p className="text-lg mb-4">
               Tem mãe gastando mais de <span className="font-bold text-red-400">R$300 por mês</span> em suplemento 

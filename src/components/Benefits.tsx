@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Lightbulb, Users, TrendingUp } from 'lucide-react';
+import { CheckCircle, Lightbulb, Users } from 'lucide-react';
 
 const Benefits = () => {
   const discoveries = [

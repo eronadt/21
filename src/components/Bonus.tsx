@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gift, Clock, BookOpen, Video } from 'lucide-react';
+import { Gift, Clock, BookOpen } from 'lucide-react';
 
 const Bonus = () => {
   const bonuses = [
