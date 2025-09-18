@@ -46,7 +46,7 @@ const CTA = () => {
                 className="w-30 h-30 mx-auto mb-3 rounded-full object-cover"
               />
               <h3 className="text-white font-bold text-lg mb-2">Vagas Limitadas</h3>
-              <p className="text-white opacity-90">Apenas 300 gestantes terão acesso a esse preço</p>
+              <p className="text-white opacity-90">Apenas 10 gestantes terão acesso a esse preço</p>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ const CTA = () => {
             <h3 className="text-2xl font-bold mb-2">⚠️ ATENÇÃO: OFERTA LIMITADA</h3>
             <p className="text-lg font-medium">
               Devido ao valor promocional, essa condição está disponível apenas para as 
-              <span className="font-bold"> primeiras 300 gestantes</span> que acessarem o conteúdo.
+              <span className="font-bold"> primeiras 10 gestantes</span> que acessarem o conteúdo.
             </p>
           </div>
         </div>
