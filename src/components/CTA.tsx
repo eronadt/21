@@ -8,7 +8,7 @@ const CTA = () => {
         {/* CTA Image */}
         <div className="mb-8">
           <img 
-            src="https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=600" 
+            src="https://i.imgur.com/wWG8YVT.png=600" 
             alt="Mãe feliz com celular recebendo conteúdo digital"
             className="w-64 h-64 mx-auto rounded-full object-cover border-8 border-white shadow-2xl"
           />
