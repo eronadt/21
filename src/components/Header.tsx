@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-center space-x-2">
           <div className="flex items-center space-x-2">
             <Heart className="w-8 h-8 text-pink-500" />
-            <span className="text-2xl font-bold text-gray-800">Método dos 21 Nutrientes</span>
+            <span className="text-2xl font-bold text-gray-800">Protocolo dos 21 Nutrientes para Gestantes</span>
             <Shield className="w-8 h-8 text-blue-500" />
           </div>
         </div>
