@@ -16,7 +16,7 @@ const Problems = () => {
         {/* Shopping Cart Image */}
         <div className="text-center mb-12">
           <img 
-            src="https://i.imgur.com/HxGCSKf.png=800" 
+            src="https://i.imgur.com/kTZKIPc.png=800" 
             alt="Mãe contando moedas no mercado"
             className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
           />
