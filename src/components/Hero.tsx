@@ -20,7 +20,7 @@ const Hero = () => {
                   className="w-full h-auto"
                 />
                 {/* Overlay escuro */}
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center space-y-4">
                   {/* Animação do Play */}
                   <div className="relative flex items-center justify-center">
                     {/* Círculo pulsante */}
@@ -30,6 +30,10 @@ const Hero = () => {
                       <Play className="w-10 h-10 text-red-600" />
                     </button>
                   </div>
+                  {/* Texto chamando atenção */}
+                  <p className="text-white text-lg font-semibold animate-pulse">
+                    👉 Clique aqui no vídeo
+                  </p>
                 </div>
               </div>
             ) : (
