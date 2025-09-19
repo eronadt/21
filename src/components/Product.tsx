@@ -33,7 +33,7 @@ const Product = () => {
           </p>
           <Package className="w-12 h-12 text-blue-500 mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            O QUE VOCÊ RECEBE COM O MÉTODO DOS 21 NUTRIENTES
+            O QUE VOCÊ RECEBE COM O PROTOCOLO DOS 21 NUTRIENTES PARA GESTANTES?
           </h2>
           <div className="w-24 h-1 bg-green-500 mx-auto rounded"></div>
         </div>
