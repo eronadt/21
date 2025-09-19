@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Heart className="w-8 h-8 text-pink-500" />
-            <span className="text-2xl font-bold">Método dos 21 Nutrientes</span>
+            <span className="text-2xl font-bold">Protocolo dos 21 Nutrientes para Gestantes</span>
             <Shield className="w-8 h-8 text-blue-500" />
           </div>
           
