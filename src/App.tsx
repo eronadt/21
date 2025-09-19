@@ -39,19 +39,8 @@ function App() {
 
     // Inicializa Pixel com o seu ID
     fbq("init", "24626278070348209");
-    fbq("track", "PageView"); // evento automático ao carregar a página
+    fbq("track", "PageView"); // dispara evento ao carregar a página
   }, []);
-
-  // Função para disparar "AddToCart"
-  const handleAddToCart = () => {
-    if (typeof fbq !== "undefined") {
-      fbq("track", "AddToCart", {
-        value: 29.90,
-        currency: "BRL",
-      });
-      console.log("Evento AddToCart enviado ao Pixel ✅");
-    }
-  };
 
   return (
     <div className="min-h-screen">
@@ -62,17 +51,6 @@ function App() {
       <Product />
       <BeforeAfter />
       <Bonus />
-
-      {/* Botão que dispara AddToCart */}
-      <div className="text-center my-8">
-        <button
-          onClick={handleAddToCart}
-          className="bg-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 transition"
-        >
-          Adicionar ao Carrinho - R$29,90
-        </button>
-      </div>
-
       <CTA />
       <Credibility />
       <Footer />
