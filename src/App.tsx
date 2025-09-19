@@ -1,16 +1,58 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import Problems from './components/Problems';
-import Product from './components/Product';
-import BeforeAfter from './components/BeforeAfter';
-import Bonus from './components/Bonus';
-import CTA from './components/CTA';
-import Credibility from './components/Credibility';
-import Footer from './components/Footer';
+import React, { useEffect } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Benefits from "./components/Benefits";
+import Problems from "./components/Problems";
+import Product from "./components/Product";
+import BeforeAfter from "./components/BeforeAfter";
+import Bonus from "./components/Bonus";
+import CTA from "./components/CTA";
+import Credibility from "./components/Credibility";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    // Código oficial do Pixel
+    !(function (f: any, b, e, v, n?, t?, s?) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+
+    // Inicializa Pixel com o seu ID
+    fbq("init", "24626278070348209");
+    fbq("track", "PageView"); // evento automático ao carregar a página
+  }, []);
+
+  // Função para disparar "AddToCart"
+  const handleAddToCart = () => {
+    if (typeof fbq !== "undefined") {
+      fbq("track", "AddToCart", {
+        value: 29.90,
+        currency: "BRL",
+      });
+      console.log("Evento AddToCart enviado ao Pixel ✅");
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -20,6 +62,17 @@ function App() {
       <Product />
       <BeforeAfter />
       <Bonus />
+
+      {/* Botão que dispara AddToCart */}
+      <div className="text-center my-8">
+        <button
+          onClick={handleAddToCart}
+          className="bg-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 transition"
+        >
+          Adicionar ao Carrinho - R$29,90
+        </button>
+      </div>
+
       <CTA />
       <Credibility />
       <Footer />
