@@ -13,9 +13,9 @@ const Hero = () => {
           <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden relative">
             {!playVideo ? (
               <div className="relative cursor-pointer" onClick={() => setPlayVideo(true)}>
-                {/* Thumbnail do YouTube */}
+                {/* Thumbnail personalizada (você pode trocar por uma imagem do vídeo do Vimeo) */}
                 <img
-                  src="https://img.youtube.com/vi/ppjEjsKhGuU/maxresdefault.jpg"
+                  src="https://i.imgur.com/hzYdTca.jpg"
                   alt="Video Thumbnail"
                   className="w-full h-auto"
                 />
@@ -23,14 +23,11 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center space-y-4">
                   {/* Animação do Play */}
                   <div className="relative flex items-center justify-center">
-                    {/* Círculo pulsante */}
                     <span className="absolute inline-flex h-20 w-20 rounded-full bg-red-500 opacity-75 animate-ping"></span>
-                    {/* Botão Play */}
                     <button className="relative bg-white rounded-full p-5 shadow-lg hover:scale-110 transition">
                       <Play className="w-10 h-10 text-red-600" />
                     </button>
                   </div>
-                  {/* Texto chamando atenção */}
                   <p className="text-white text-lg font-semibold animate-pulse">
                     👉 Clique aqui no vídeo
                   </p>
@@ -39,10 +36,10 @@ const Hero = () => {
             ) : (
               <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/ppjEjsKhGuU?si=EVPCu92C5GrzWq-j&autoplay=1"
-                  title="YouTube video player"
+                  src="https://player.vimeo.com/video/1118125409?badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479"
+                  title="Para Você"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                   style={{
@@ -94,7 +91,7 @@ const Hero = () => {
             <span>QUERO PROTEGER MEU BEBÊ AGORA</span>
             <ArrowDown className="w-6 h-6" />
           </button>
-          <p className="text-sm text-gray-500">✅ Acesso imediato • ✅ Acesso Vitálicio</p>
+          <p className="text-sm text-gray-500">✅ Acesso imediato • ✅ Acesso Vitalício</p>
         </div>
       </div>
     </section>
