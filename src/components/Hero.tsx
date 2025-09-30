@@ -1,57 +1,31 @@
-import React, { useState } from 'react';
-import { AlertTriangle, Baby, ArrowDown, Play } from 'lucide-react';
+import React from 'react';
+import { AlertTriangle, Baby, ArrowDown } from 'lucide-react';
 
 const Hero = () => {
-  const [playVideo, setPlayVideo] = useState(false);
-
   return (
     <section className="bg-gradient-to-br from-pink-50 via-white to-blue-50 py-16">
       <div className="container mx-auto px-4 text-center">
 
-        {/* Hero Video (com thumbnail e botão de play animado) */}
+        {/* Vídeo Vimeo direto */}
         <div className="mb-8">
-          <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden relative">
-            {!playVideo ? (
-              <div className="relative cursor-pointer" onClick={() => setPlayVideo(true)}>
-                {/* Thumbnail personalizada (você pode trocar por uma imagem do vídeo do Vimeo) */}
-                <img
-                  src="https://i.imgur.com/hzYdTca.jpg"
-                  alt="Video Thumbnail"
-                  className="w-full h-auto"
-                />
-                {/* Overlay escuro */}
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center space-y-4">
-                  {/* Animação do Play */}
-                  <div className="relative flex items-center justify-center">
-                    <span className="absolute inline-flex h-20 w-20 rounded-full bg-red-500 opacity-75 animate-ping"></span>
-                    <button className="relative bg-white rounded-full p-5 shadow-lg hover:scale-110 transition">
-                      <Play className="w-10 h-10 text-red-600" />
-                    </button>
-                  </div>
-                  <p className="text-white text-lg font-semibold animate-pulse">
-                    👉 Clique aqui no vídeo
-                  </p>
-                </div>
-              </div>
-            ) : (
-              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1118125409?badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479"
-                  title="Para Você"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </div>
-            )}
+          <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
+            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe
+                src="https://player.vimeo.com/video/1118125409?badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479"
+                title="Para Você"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                }}
+              />
+            </div>
           </div>
         </div>
 
