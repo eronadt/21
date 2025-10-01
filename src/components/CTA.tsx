@@ -50,15 +50,59 @@ export default function CTA() {
           </div>
 
           {/* Urgency */}
-          <div className="bg-yellow-400 text-black p-6 rounded-xl">
-            <h3 className="text-2xl font-bold mb-2">⚠️ ATENÇÃO: OFERTA LIMITADA</h3>
-            <p className="text-lg font-medium">
-              Devido ao valor promocional, essa condição está disponível apenas para as
-              <span className="font-bold"> primeiras 10 gestantes</span> que acessarem o conteúdo.
-            </p>
-          </div>
-        </div>
+          import React, { useEffect, useMemo, useState } from "react";
+
+function two(n: number) {
+  return n.toString().padStart(2, "0");
+}
+
+function endOfDayFor(date: Date): Date {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate(), 23, 59, 59, 999);
+}
+
+export default function Urgency() {
+  const [now, setNow] = useState<Date>(new Date());
+
+  // Recalcula o fim do dia sempre que o "dia" mudar (ex.: 00:00)
+  const endOfToday = useMemo(() => endOfDayFor(now), [now.toDateString()]);
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const msLeft = Math.max(0, endOfToday.getTime() - now.getTime());
+  const totalSeconds = Math.floor(msLeft / 1000);
+
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  const hojeFormatado = now.toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+
+  return (
+    <div className="bg-yellow-400 text-black p-6 rounded-xl">
+      <h3 className="text-2xl font-bold mb-2">⚠️ ATENÇÃO: OFERTA LIMITADA</h3>
+
+      <p className="text-lg font-medium">
+        Devido ao valor promocional, essa condição está disponível apenas para as
+        <span className="font-bold"> primeiras 10 gestantes</span> que acessarem o conteúdo.
+      </p>
+
+      <p className="text-lg font-semibold mt-4">
+        🔥 Oferta válida até <span className="font-bold">{hojeFormatado}</span> às 23:59.
+      </p>
+
+      <div className="mt-3 inline-flex items-center gap-2 bg-black/10 rounded-lg px-4 py-2">
+        <span className="font-semibold">Tempo restante:</span>
+        <span className="font-mono text-xl">
+          {two(hours)}:{two(minutes)}:{two(seconds)}
+        </span>
       </div>
-    </section>
+    </div>
   );
 }
