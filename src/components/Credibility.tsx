@@ -3,7 +3,7 @@ import { Award, Users, BookOpen, Star } from 'lucide-react';
 
 const faqs: { question: string; answer: string }[] = [
   {
-    question: 'Como recebo o Método dos 21 Nutrientes após a compra?',
+    question: 'Como recebo o Protocolo 21 Nutrientes após a compra?',
     answer:
       'O acesso chega imediatamente no seu e-mail assim que o pagamento é confirmado, permitindo que você entre na plataforma e consulte todo o conteúdo na mesma hora.',
   },
@@ -45,7 +45,7 @@ const Credibility = () => {
           <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 mb-12">
             <div className="mb-6">
               <img 
-                src="https://i.imgur.com/EV7KN5I.png=800" 
+                src="https://i.imgur.com/6icQDYi.jpeg=800" 
                 alt="Nutricionista feminina sorrindo com alimentos saudáveis"
                 className="w-64 h-64 mx-auto rounded-full object-cover shadow-lg border-4 border-blue-200"
               />
@@ -53,13 +53,13 @@ const Credibility = () => {
 
             <div className="flex items-center justify-center mb-6">
               <Users className="w-8 h-8 text-blue-600 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-800">Equipe de Especialistas</h3>
+              <h3 className="text-2xl font-bold text-gray-800">Joana Sabino</h3>
             </div>
             
             <p className="text-lg text-gray-700 mb-6">
-              Desenvolvido por uma equipe de nutricionistas com mais de 
-              <span className="font-bold text-blue-600"> 12 anos de atuação clínica</span> 
-              com gestantes em sistema público e privado.
+              Desenvolvido por mim, que atua há mais de 
+              <span className="font-bold text-blue-600"> 12 anos em clínicas com gestantes,</span> 
+              tanto no sistema público quanto no privado.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
