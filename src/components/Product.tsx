@@ -72,10 +72,10 @@ const Product = () => {
             {/* Pricing + CTA */}
             <a
   <a
-  href="https://pay.kiwify.com.br/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block text-center bg-white text-gray-900 p-8 rounded-xl border border-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer animate-pulse"
+  href="https://pay.kiwify.com.br/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-center bg-white text-gray-900 p-8 rounded-xl border border-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
 >
               <span className="inline-block bg-yellow-300 text-gray-900 font-bold px-3 py-1 rounded-full mb-4">
                 Oferta por tempo limitado
