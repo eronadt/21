@@ -11,8 +11,8 @@ const Hero = () => {
           <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden">
             <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
               <iframe
-                src="https://player.vimeo.com/video/1118125409?badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479"
-                title="Para Você"
+                src="https://player.vimeo.com/video/1123424530?title=0&byline=0&portrait=0&badge=0&autopause=0&autoplay=1&player_id=0&app_id=58479"
+                title="Protocolo 21 Nutrientes"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
