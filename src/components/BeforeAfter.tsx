@@ -5,7 +5,7 @@ const BeforeAfter = () => {
   const testimonials = [
     {
       image: 'https://i.imgur.com/mWlJQRk.png',
-      alt: 'Feedback de mãe sobre o método dos 21 nutrientes'
+      alt: 'Feedback de mãe sobre o protocolo 21 nutrientes'
     },
     {
       image: 'https://i.imgur.com/ooIkKAk.png',
@@ -63,7 +63,7 @@ const BeforeAfter = () => {
             O Que as Mães Estão Falando
           </h2>
           <p className="text-lg text-gray-600 mb-6">
-            Centenas de gestantes já transformaram sua alimentação com o Método dos 21 Nutrientes
+            Centenas de gestantes já transformaram sua alimentação com o Protoco 21 Nutrientes
           </p>
           <div className="w-24 h-1 bg-green-500 mx-auto rounded"></div>
         </div>
