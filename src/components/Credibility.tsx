@@ -45,7 +45,7 @@ const Credibility = () => {
           <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 mb-12">
             <div className="mb-6">
               <img 
-                src="https://i.imgur.com/6icQDYi.jpeg=800" 
+                src="https://i.imgur.com/zCzTGZL.jpeg=800" 
                 alt="Nutricionista feminina sorrindo com alimentos saudáveis"
                 className="w-64 h-64 mx-auto rounded-full object-cover shadow-lg border-4 border-blue-200"
               />
@@ -57,9 +57,9 @@ const Credibility = () => {
             </div>
             
             <p className="text-lg text-gray-700 mb-6">
-              Desenvolvido por mim, que atua há mais de 
+              Desenvolvido por mim, já atuo há mais de 
               <span className="font-bold text-blue-600"> 12 anos em clínicas com gestantes,</span> 
-              tanto no sistema público quanto no privado.
+               tanto no sistema público quanto no privado.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
