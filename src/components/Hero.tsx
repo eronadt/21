@@ -65,7 +65,7 @@ const Hero = () => {
             <span>QUERO PROTEGER MEU BEBÊ AGORA</span>
             <ArrowDown className="w-6 h-6" />
           </button>
-          <p className="text-sm text-gray-500">✅ Acesso imediato • ✅ Acesso Vitalício</p>
+          <p className="text-sm text-gray-500"></p>
         </div>
       </div>
     </section>
