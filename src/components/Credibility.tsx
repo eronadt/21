@@ -58,8 +58,8 @@ const Credibility = () => {
             
             <p className="text-lg text-gray-700 mb-6">
               Desenvolvido por mim, já atuo há mais de 
-              <span className="font-bold text-blue-600"> 12 anos em clínicas com gestantes,</span> 
-               tanto no sistema público quanto no privado.
+              <span className="font-bold text-blue-600"> 12 anos em clínicas com gestantes, </span> 
+              tanto no sistema público quanto no privado.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
