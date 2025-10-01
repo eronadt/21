@@ -70,7 +70,6 @@ const Product = () => {
             </div>
 
             {/* Pricing + CTA */}
-            <a
   <a
   href="https://pay.kiwify.com.br/" 
               target="_blank" 
