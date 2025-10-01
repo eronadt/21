@@ -42,7 +42,7 @@ export default function CTA() {
           <img
             src="https://i.imgur.com/5H6yvst.png"
             alt="Mãe feliz com celular recebendo conteúdo digital"
-            className="w-24 h-24 mx-auto rounded-full object-cover"
+            className="w-30 h-30 mx-auto rounded-full object-cover"
           />
         </div>
 
@@ -57,7 +57,7 @@ export default function CTA() {
               <img
                 src="https://i.imgur.com/fsySJjQ.png"
                 alt="Selo de garantia e proteção"
-                className="w-24 h-24 mx-auto mb-3 rounded-full object-cover"
+                className="w-30 h-30 mx-auto mb-3 rounded-full object-cover"
               />
               <h3 className="text-white font-bold text-lg mb-2">Garantia Incondicional</h3>
               <p className="text-white/90">30 dias para testar. Não gostou? Devolvemos 100%</p>
@@ -67,7 +67,7 @@ export default function CTA() {
               <img
                 src="https://i.imgur.com/4X596s6.png"
                 alt="Acesso imediato"
-                className="w-24 h-24 mx-auto mb-3 rounded-full object-cover"
+                className="w-30 h-30 mx-auto mb-3 rounded-full object-cover"
               />
               <h3 className="text-white font-bold text-lg mb-2">Acesso Imediato</h3>
               <p className="text-white/90">Receba tudo no seu email em menos de 2 minutos</p>
@@ -77,7 +77,7 @@ export default function CTA() {
               <img
                 src="https://i.imgur.com/qtTjFya.png"
                 alt="Vagas limitadas"
-                className="w-24 h-24 mx-auto mb-3 rounded-full object-cover"
+                className="w-30 h-30 mx-auto mb-3 rounded-full object-cover"
               />
               <h3 className="text-white font-bold text-lg mb-2">Vagas Limitadas</h3>
               <p className="text-white/90">Apenas algumas gestantes terão acesso a esse preço</p>
