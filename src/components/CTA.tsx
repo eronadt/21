@@ -45,7 +45,7 @@ export default function CTA() {
                 className="w-30 h-30 mx-auto mb-3 rounded-full object-cover"
               />
               <h3 className="text-white font-bold text-lg mb-2">Vagas Limitadas</h3>
-              <p className="text-white opacity-90">Apenas 10 gestantes terão acesso a esse preço</p>
+              <p className="text-white opacity-90">Apenas algumas gestantes terão acesso a esse preço</p>
             </div>
           </div>
 
