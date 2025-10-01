@@ -3,7 +3,7 @@ import { Package, CheckCircle, Clock } from 'lucide-react';
 
 const Product = () => {
   const includes = [
-    'Lista dos 21 nutrientes essenciais (sem enrolação)',
+    'Protocolo 21 nutrientes essenciais (sem enrolação)',
     'Cardápio semanal com substituições acessíveis',
     'Lista de mercado por trimestre gestacional',
     'Opções para quem tem restrições alimentares',
