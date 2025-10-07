@@ -104,7 +104,7 @@ const Credibility = () => {
               ...mas errando no básico: <span className="font-bold text-green-400">comida de verdade</span>.
             </p>
             <a 
-              href="https://kiwify.com.br/" 
+              href="https://pay.kiwify.com.br/4qRdenZ" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block bg-green-600 p-4 rounded-lg hover:bg-green-700 transition-colors duration-300 cursor-pointer transform hover:scale-105"
