@@ -83,9 +83,9 @@ const Product = () => {
               
               {/* Bloco do preço */}
               <div className="mb-4">
-                <p className="text-lg line-through text-red-500">De R$ 97,00</p>
+                <p className="text-lg line-through text-red-500">De R$ 147,00</p>
                 <p className="text-4xl md:text-5xl font-extrabold text-green-600">
-                  APENAS R$ 29,90
+                  APENAS R$ 67,90
                 </p>
                 <p className="text-lg mt-2">Pagamento único • Sem mensalidade</p>
               </div>
