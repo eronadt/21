@@ -15,10 +15,9 @@ const Product = () => {
   return (
     <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16">
       <div className="container mx-auto px-4">
-        
         {/* Imagem do Produto */}
         <div className="text-center mb-8">
-          <img 
+          <img
             src="https://i.imgur.com/MMrL54J.jpeg"
             alt="Flat lay com caderno, celular, checklist e alimentos saudáveis"
             loading="lazy"
@@ -40,12 +39,11 @@ const Product = () => {
 
         {/* Conteúdo */}
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-          
           {/* Lista de Benefícios */}
           <div className="grid gap-4 mb-8 divide-y divide-gray-100">
             {includes.map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex items-start space-x-3 p-4 bg-green-50 rounded-lg border border-green-100"
               >
                 <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
@@ -69,18 +67,17 @@ const Product = () => {
               </div>
             </div>
 
-            {/* Pricing + CTA */}
-  <a
-  href="https://pay.kiwify.com.br/4qRdenZ"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block text-center bg-white text-gray-900 p-8 rounded-xl border border-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
-
->
+            {/* Pricing + CTA (seu card clicável atual) */}
+            <a
+              href="https://pay.kiwify.com.br/4qRdenZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center bg-white text-gray-900 p-8 rounded-xl border border-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
               <span className="inline-block bg-yellow-300 text-gray-900 font-bold px-3 py-1 rounded-full mb-4">
                 Oferta por tempo limitado
               </span>
-              
+
               {/* Bloco do preço */}
               <div className="mb-4">
                 <p className="text-lg line-through text-red-500">De R$ 147,00</p>
@@ -91,13 +88,25 @@ const Product = () => {
               </div>
 
               {/* Selos de confiança */}
-              <img 
+              <img
                 src="https://i.imgur.com/UpR3p9z.png"
                 alt="Selos de compra segura, garantia e formas de pagamento"
                 loading="lazy"
                 className="w-full max-w-md mx-auto mt-4"
               />
             </a>
+
+            {/* NOVO BOTÃO VERDE — igual ao da imagem, com texto “QUERO COMPRAR AGORA” */}
+            <div className="mt-6">
+              <a
+                href="https://pay.kiwify.com.br/4qRdenZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full max-w-md mx-auto text-center bg-[#22c55e] hover:bg-[#16a34a] text-white font-extrabold uppercase tracking-wide py-4 px-6 rounded-lg shadow-lg shadow-green-500/30 transition-transform duration-200 hover:scale-[1.02]"
+              >
+                QUERO COMPRAR AGORA
+              </a>
+            </div>
 
             <p className="text-sm text-gray-500 text-center mt-2">
               Compra 100% segura • Receba agora mesmo no seu e-mail
