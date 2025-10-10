@@ -82,7 +82,7 @@ const Product = () => {
               <div className="mb-4">
                 <p className="text-lg line-through text-red-500">De R$ 97,90</p>
                 <p className="text-4xl md:text-5xl font-extrabold text-green-600">
-                  APENAS R$ 39,90
+                  APENAS R$ 19,90
                 </p>
                 <p className="text-lg mt-2">Pagamento único • Sem mensalidade</p>
               </div>
