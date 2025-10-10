@@ -110,7 +110,7 @@ const Credibility = () => {
               className="block bg-green-600 p-4 rounded-lg hover:bg-green-700 transition-colors duration-300 cursor-pointer transform hover:scale-105"
             >
               <p className="text-xl font-bold">
-                Por R$67,90 você tem acesso ao que resolve.
+                Por R$39,90 você tem acesso ao que resolve.
               </p>
               <p className="text-lg opacity-90">O resto é ilusão vendida por farmácia.</p>
             </a>
